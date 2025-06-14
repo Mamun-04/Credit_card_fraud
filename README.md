@@ -20,4 +20,9 @@ From the predictions of XGBoost and RandomForest, XGBoost performed better in de
 
 The dataset was also heavily imbalanced therefore a typical classifier trained on this will mostly learn to predict 0 (non-fraud) to optimize accuracy, since fraud is so rare. This meant the systems were able only predict fraud coreectly roughly 86% of the time.
 
+- **AUPRC**: `0.2708`
+  - A random guesser would score ~0.0017 (fraud ratio).
+  - This model performs **~150× better than random** at identifying fraud.
+
+Confusion matrices were not recommended for this task and that it clear given the ouptut form the code written, hence why a precision-recall curve is a better representation
 
