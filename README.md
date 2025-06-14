@@ -18,4 +18,6 @@ To simulate real-world scenarios, the dataset was:
 No missing values, the dataset was clean. 
 From the predictions of XGBoost and RandomForest, XGBoost performed better in detecting rare fraud cases. Confusion matrices were also made to give comparisons about the two performances
 
+The dataset was also heavily imbalanced therefore a typical classifier trained on this will mostly learn to predict 0 (non-fraud) to optimize accuracy, since fraud is so rare. This meant the systems were able only predict fraud coreectly roughly 86% of the time.
+
 
